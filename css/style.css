@@ -1,0 +1,75 @@
+
+/*Detta är css - style dokumentet där jag stylar min hemsida med exempelvis färger. Kodningen i css-dokumentet ligger relativt väl i den ordning den är på hemsidan för en lättare nevigering i minkod. */
+
+/* En beskrivning av hur all text på båda sidorna (index & characters) ska se ut. */
+.container{
+  font-size: 80%;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+}
+
+.chcontainer{
+  font-size: 80%;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Då de enda listorna jag har är i menyn använder jag attributet för listor vid min design av menyn. Detta säger endast att jag inte vill ha punkterna i min lista. */
+ul{
+  list-style: none;
+}
+
+/* En fortsatt beskrivning av hur menyn ska se ut, då jag gett den div som meny-innehållet ligger i klassen: "meny". */
+.menu{
+  background-color: rgb(255, 99, 0);
+  background-image: linear-gradient(rgb(255, 99, 0), white);
+  margin-right: 10px;
+}
+
+/* Styling för start-bilden. */
+#hem{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: 5px solid ;
+}
+
+/* Styling för rubriken: "Handling". */
+#handling{
+  border-left: 5px solid rgb(255, 99, 0);
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+/* Här visas stylingen för all paragraftext som finns på båda sidorna, för då jag vill att de ska vara detsamma använder jag attributet för paragrafer/stycken. */
+p{
+  display: block;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+/* Styling för rubriken: "Platser". Den enda texten som är färgad i dokumentet. */
+h3{
+  color: rgb(255, 99, 0);
+}
+
+/* Styling för bilden av de olika familjernas hus. */
+#bildmodernfamilyhouses{
+  width: 100%;
+}
+
+/* Styling av alla länkar som finns i dokumentet, då jag hellre har de svarta än blå eftersom det passar bättre med färgtemat. */
+a{
+  color: black;
+}
+
+/* Styling av "characters.html": */
+
+/* Styling av bilden på seriens familjers släktträd. Jag specifiserar till exempel att den ska vara centrarad och ha en border. */
+#bildsläktträd{
+display: block;
+margin-left: auto;
+margin-right: auto;
+border: 5px solid;
+}

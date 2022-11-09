@@ -1,0 +1,96 @@
+/* Detta är mitt css - grid dokument. Här designar jag placeringen av innehållet på min hemsida. */
+
+/* Här nedan visas vad det är som ska stylas med grid, och "reglerna" för stylingen. */
+.container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(40px, auto)
+}
+
+/* Placering av menyn. */
+.menu{
+  grid-column: 1 / 3;
+  grid-row: 1 / 6;
+}
+
+/* Placering av hem-bilden. */
+#hem{
+  grid-column: 3 / -3;
+}
+
+/* Placering av rubriken: "Handling". */
+#handling{
+  grid-column: 3 / 4;
+}
+
+/* Placering av all paragraftext på båda sidorna. */
+p{
+  grid-column: 3 / -3;
+}
+
+/* Placering av rubriken: "Platser". */
+h3{
+  grid-column: 3 / -3;
+}
+
+/* Placering av  bilden av seriens familjers hus. */
+#bildmodernfamilyhouses{
+  grid-column: 3 / -3;
+}
+
+/* Placering av den länk som finns längst ner på sidan (index), som går till start / hem -bilden. */
+#toppenlink{
+  grid-column: 3 / -1;
+}
+
+/* Placering av innehåll på sidan "characters.html". */
+/* Beskrivning av vilket innehåll som ska stylas med grid. */
+.chcontainer{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(40px, auto);
+}
+
+/* Placering av bilden av seriens familjers släktträd. */
+#bildsläktträd{
+  grid-column: 3 / -3;
+  width: 100%
+}
+
+/* Placering av alla rubriker (vilket endast är en) som heter h1. Detta syftar på rubriken: "Karaktärerna". */
+h1{
+  grid-column: 3 / -1;
+}
+
+/* Placering av rubriken: "Släkträd:". */
+#släkträdrubrik{
+  grid-column: 3 / -1;
+}
+
+
+/* Här nedan följer media query. Detta används för att förändra sidans utseende vid speciella förutsättningar. I detta fall är mina förutsättningar att skärmen ska förändras vid 1023px.
+Jag har då valt att lägga menyn under bilderna istället för på kanten, då texten i menyn blir feldimensionerad vid en skärm som är mindre än 1024px. */
+@media only screen and (max-width: 1024px){
+
+/* En alternativ placering för menyn, när skärmen är mindre än 1024px. */
+  .menu{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    margin-right: 0px;
+  }
+
+/* En alternativ placering för hem-bilden, när skärmen är mindre än 1024px. */
+  #hem{
+    grid-column: 1 / -1;
+    width: 100%;
+    margin: 10px;
+  }
+
+/* En alternativ placering för bilden av seriens familjers släktträd, när skärmen är mindre än 1024px.*/
+  #bildsläktträd{
+    grid-column: 1 / -1;
+    grid-row: 1 / auto;
+    width: 100%;
+    margin: 10px;
+  }
+}
